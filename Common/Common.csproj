@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="EastAsianWidth" Version="1.2.0" />
     <PackageReference Include="Google.Protobuf" Version="3.29.2" />
     <PackageReference Include="Google.Protobuf.Tools" Version="3.29.2" />

@@ -16,6 +16,10 @@
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\KcpSharp\KcpSharp.csproj" />
     <ProjectReference Include="..\Proto\Proto.csproj" />
+    <PackageReference Include="Costura.Fody" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="System.IO.Pipelines" Version="9.0.0" />
   </ItemGroup>
 
