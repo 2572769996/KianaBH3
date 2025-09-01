@@ -9,7 +9,7 @@ public class PacketPjmsGetCurWorldRsp : BasePacket
     {
         var proto = new PjmsGetCurWorldRsp
         {
-        
+            World = new() { WorldId = 400 }
         };
 
         SetData(proto);

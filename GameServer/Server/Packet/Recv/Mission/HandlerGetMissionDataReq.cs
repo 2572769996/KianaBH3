@@ -27,7 +27,7 @@ public class HandlerGetMissionDataReq : Handler
             var missions = selectedMissions.Select(m => new Proto.Mission
             {
                 MissionId = m.Id,
-                Status = MissionStatus.MissionClose,
+                Status = MissionStatus.None,
                 Priority = m.Priority,
                 Progress = m.TotalProgress,
                 BeginTime = 0,
@@ -49,7 +49,7 @@ public class HandlerGetMissionDataReq : Handler
         var lastMissionList = lastMissions.Select(m => new Proto.Mission
         {
             MissionId = m.Id,
-            Status = MissionStatus.MissionClose,
+            Status = MissionStatus.None,
             Priority = m.Priority,
             Progress = m.TotalProgress,
             BeginTime = 0,

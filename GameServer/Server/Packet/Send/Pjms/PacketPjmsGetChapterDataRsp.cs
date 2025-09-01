@@ -10,7 +10,7 @@ public class PacketPjmsGetChapterDataRsp : BasePacket
         // TODO: Hardcoded
         var proto = new PjmsGetChapterDataRsp
         {
-            CurChapterId = 100,
+            CurChapterId = 200,
             IsAll = true,
             ChapterList =
             {
@@ -76,6 +76,31 @@ public class PacketPjmsGetChapterDataRsp : BasePacket
                             new PjmsUnitSet { SetId = 5 }
                         }
                     }
+                },
+                new PjmsChapter
+                {
+                    ChapterId = 200,
+                    Formation = new()
+                    {
+                        CurAvatarId = 4223,
+                        ElfId = 120,
+                        StarRingEnergy = 150,
+                        AvatarIdList = { 4223, 4224, 4225 }
+                    },
+                    UnitInfo = new()
+                    {
+                        CurUnitSetId = 1,
+                        UnitSetList =
+                        {
+                            new PjmsUnitSet { SetId = 1 },
+                            new PjmsUnitSet { SetId = 2 },
+                            new PjmsUnitSet { SetId = 3 },
+                            new PjmsUnitSet { SetId = 4 },
+                            new PjmsUnitSet { SetId = 5 }
+                        }
+                    },
+                    PlayingBgmId = 59,
+                    CurSectionId = 1
                 }
             }
         };
